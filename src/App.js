@@ -1,7 +1,20 @@
+import Navbar from './components/Navbar';
+import './App.css';
+import Headline from './components/Headline';
+import LatestNews from './components/LatestNews';
+import TrendingNews from './components/TrendingNews';
+
 function App() {
   return (
-    <div className="App">
-      <h2>Hello World</h2>
+    <div className="app">
+      <Navbar />
+      <div className="middle-container">
+        <Headline />
+        <LatestNews />
+      </div>
+      <div className="bottom-container">
+        <TrendingNews />
+      </div>
     </div>
   );
 }
