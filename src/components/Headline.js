@@ -7,7 +7,7 @@ const Headline = () => {
   return (
     <div className="main-container">
       <div className="image-container">
-        <img src={headlineNews?.image} alt="News" />
+        <img src={headlineNews?.imageDesktop} alt="News" />
       </div>
       <div className="details-container">
         <div>

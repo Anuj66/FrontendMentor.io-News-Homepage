@@ -1,6 +1,9 @@
+import headlineImageDesktop from '../assets/images/image-web-3-desktop.jpg';
+import headlineImageMobile from '../assets/images/image-web-3-mobile.jpg';
+
 export const headlineNews = {
-  imageDesktop: '../assets/images/image-web-3-desktop.jpg',
-  imageMobile: '../assets/images/image-web-3-mobile.jpg',
+  imageDesktop: headlineImageDesktop,
+  imageMobile: headlineImageMobile,
   title: 'The Bright Future of Web 3.0?',
   description:
     'We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?',
