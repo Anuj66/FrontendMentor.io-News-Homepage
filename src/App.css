@@ -2,14 +2,14 @@
   margin: 0 10rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 5rem;
 }
 
 .middle-container {
   display: flex;
   flex-direction: row;
   /* gap: 2rem; */
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   gap: 2rem;
 }
 

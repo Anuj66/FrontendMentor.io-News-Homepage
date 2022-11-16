@@ -1,5 +1,8 @@
 import headlineImageDesktop from '../assets/images/image-web-3-desktop.jpg';
 import headlineImageMobile from '../assets/images/image-web-3-mobile.jpg';
+import retroPcs from '../assets/images/image-retro-pcs.jpg';
+import topLaptops from '../assets/images/image-top-laptops.jpg';
+import gamingGrowth from '../assets/images/image-gaming-growth.jpg';
 
 export const headlineNews = {
   imageDesktop: headlineImageDesktop,
@@ -28,14 +31,17 @@ export const latestNews = [
 
 export const trendingNews = [
   {
+    image: retroPcs,
     title: 'Reviving Retro PCs',
     description: 'What happens when old PCs are given modern upgrades?',
   },
   {
+    image: topLaptops,
     title: 'Top 10 Laptops of 2022',
     description: 'Our best picks for various needs and budgets.',
   },
   {
+    image: gamingGrowth,
     title: 'The Growth of Gaming',
     description: 'How the pandemic has sparked fresh opportunities.',
   },

@@ -1,0 +1,22 @@
+.trendingNews-main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.trendingNews-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.trendingNews-item-image-tag {
+  /* width: 10rem;
+  height: 10rem; */
+}
+
+.trendingNews-item-description {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
