@@ -7,15 +7,15 @@ const Headline = () => {
   return (
     <div className="main-container">
       <div className="image-container">
-        <img src={headlineNews?.imageDesktop} alt="News" />
+        <img className="headline-image" src={headlineNews?.imageDesktop} alt="News" />
       </div>
       <div className="details-container">
-        <div>
-          <h1>{headlineNews?.title}</h1>
+        <div className="details-title">
+          <h1 className="details-header">{headlineNews?.title}</h1>
         </div>
-        <div>
-          <p>{headlineNews?.p}</p>
-          <button>Read More</button>
+        <div className="details-description">
+          <p className="details-paragraph">{headlineNews?.description}</p>
+          <button className="details-read-more">READ MORE</button>
         </div>
       </div>
     </div>
