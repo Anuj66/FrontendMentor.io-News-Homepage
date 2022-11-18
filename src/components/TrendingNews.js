@@ -17,9 +17,9 @@ const TrendingNews = () => {
               </h1>
             </div>
             <div className="trendingNews-item-description-title">
-              <h4 className="trendingNews-item-description-title-header-tag">
+              <h3 className="trendingNews-item-description-title-header-tag">
                 {data.title}
-              </h4>
+              </h3>
             </div>
             <div className="trendingNews-item-description-description">
               <p className="trendingNews-item-description-description-p-tag">
