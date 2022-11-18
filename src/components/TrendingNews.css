@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 10rem;
-  overflow: hidden;
+  gap: 1rem;
 }
 
 .trendingNews-item {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  flex: 1;
 }
 
 .trendingNews-item-image-tag {
@@ -33,9 +33,15 @@
 
 .trendingNews-item-description-title {
   flex: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 .trendingNews-item-description-title-header-tag {
   margin: 0;
+}
+.trendingNews-item-description-title:hover {
+  color: var(--clr-soft-red);
+  transition: 0.5s ease;
 }
 
 .trendingNews-item-description-description {
@@ -45,4 +51,10 @@
   margin: 0;
   font-size: 0.8rem;
   color: var(--clr-dark-grayish-blue);
+}
+
+@media screen and (max-width: 375px) {
+  .trendingNews-main-container {
+    flex-direction: column;
+  }
 }

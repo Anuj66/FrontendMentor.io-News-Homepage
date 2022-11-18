@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { ImCross } from 'react-icons/im';
 
 const Navbar = () => {
+  const [showCross, setShowCross] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  const hamburgerClick = () => {
+    setExpanded(!expanded);
+    let bg = document.body;
+    bg.style.backgroundColor = '#848484';
+    setShowCross(true);
+  };
+
+  const crossClick = () => {
+    setExpanded(!expanded);
+    let bg = document.body;
+    bg.style.backgroundColor = 'white';
+    setShowCross(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -12,7 +31,15 @@ const Navbar = () => {
           />
         </svg>
       </div>
-      <div className="links-div">
+      <button className={'hamburger'} onClick={hamburgerClick}>
+        <GiHamburgerMenu />
+      </button>
+      <div className={expanded ? 'collapsed-items' : 'nav-collapse-items'}>
+        {showCross && (
+          <button className={'cross'} onClick={crossClick}>
+            <ImCross />
+          </button>
+        )}
         <ul className="links-ul">
           <li className="nav-link">Home</li>
           <li className="nav-link">New</li>

@@ -10,7 +10,6 @@
 }
 
 body {
-  margin: 2rem;
   font-family: 'Inter', sans-serif;
   background-color: var(--clr-off-white);
 }

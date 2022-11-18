@@ -1,15 +1,11 @@
 .latest-news-main-container {
-  flex-basis: 50%;
   background-color: var(--clr-very-dark-blue);
   padding: 0 1.5rem;
+  flex: 1;
 }
 
 .title {
   color: var(--clr-soft-orange);
-}
-
-.title-header {
-  /* margin-left: 1.5rem; */
 }
 
 .items {
@@ -28,6 +24,13 @@
 .item-title {
   color: var(--clr-off-white);
   margin-bottom: 0.1rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.item-title:hover {
+  color: var(--clr-soft-orange);
+  transition: 0.5s ease;
 }
 
 .item-details {

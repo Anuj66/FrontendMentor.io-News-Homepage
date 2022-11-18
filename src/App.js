@@ -6,14 +6,16 @@ import TrendingNews from './components/TrendingNews';
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <div className="middle-container">
-        <Headline />
-        <LatestNews />
-      </div>
-      <div className="bottom-container">
-        <TrendingNews />
+    <div className="main-app">
+      <div className="app">
+        <Navbar />
+        <div className="middle-container">
+          <Headline />
+          <LatestNews />
+        </div>
+        <div className="bottom-container">
+          <TrendingNews />
+        </div>
       </div>
     </div>
   );
